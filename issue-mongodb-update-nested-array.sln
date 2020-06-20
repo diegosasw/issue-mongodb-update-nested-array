@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E7DEF53E-C3FA-473D-A39A-81AA01D85596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BD3C3EC8-BEBE-4170-BB09-8E9E9DB7E7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDb.UpdateNestedArray", "src\MongoDb.UpdateNestedArray\MongoDb.UpdateNestedArray.csproj", "{8746426C-94E3-466D-9291-FCBA8A5C136A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDb.UpdateNestedArray.IntegrationTests", "test\MongoDb.UpdateNestedArray.IntegrationTests\MongoDb.UpdateNestedArray.IntegrationTests.csproj", "{B6B07D4C-CEFE-4487-8CA9-478A60707878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|x64.Build.0 = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Debug|x86.Build.0 = Debug|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|x64.ActiveCfg = Release|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|x64.Build.0 = Release|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|x86.ActiveCfg = Release|Any CPU
+		{8746426C-94E3-466D-9291-FCBA8A5C136A}.Release|x86.Build.0 = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|x64.Build.0 = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Debug|x86.Build.0 = Debug|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|x64.ActiveCfg = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|x64.Build.0 = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8746426C-94E3-466D-9291-FCBA8A5C136A} = {E7DEF53E-C3FA-473D-A39A-81AA01D85596}
+		{B6B07D4C-CEFE-4487-8CA9-478A60707878} = {BD3C3EC8-BEBE-4170-BB09-8E9E9DB7E7D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76F64251-517E-48B0-9C05-D4C4D7DDB542}
+	EndGlobalSection
+EndGlobal
