@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace MongoDb.UpdateNestedArray
@@ -54,8 +55,19 @@ namespace MongoDb.UpdateNestedArray
                 var update =
                     Builders<Community>
                         .Update
-                        .Set($"Blocks.$[{houseBlockName}].Floors.$[{houseFloorName}].Doors.$[{houseDoorName}].LabelNames", names);
-                await _communities.UpdateOneAsync(filter, update);
+                        .Set("Blocks.$[block].Floors.$[floor].Doors.$[door].LabelNames", names);
+
+                var arrayFilters = new List<ArrayFilterDefinition>();
+                ArrayFilterDefinition<BsonDocument> blockFilter = new BsonDocument("block.Name", new BsonDocument("$eq", houseBlockName));
+                ArrayFilterDefinition<BsonDocument> floorFilter = new BsonDocument("floor.Name", new BsonDocument("$eq", houseFloorName));
+                ArrayFilterDefinition<BsonDocument> doorFilter = new BsonDocument("door.Name", new BsonDocument("$eq", houseDoorName));
+                arrayFilters.Add(blockFilter);
+                arrayFilters.Add(floorFilter);
+                arrayFilters.Add(doorFilter);
+
+                var updateOptions = new UpdateOptions { ArrayFilters = arrayFilters };
+
+                _ = await _communities.UpdateOneAsync(filter, update, updateOptions);
             }
         }
     }
